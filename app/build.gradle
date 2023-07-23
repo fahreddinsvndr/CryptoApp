@@ -28,10 +28,16 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", "\"https://pro-api.coinmarketcap.com/\""
+            buildConfigField "String", "BASE_IMAGE_URL", "\"https://s2.coinmarketcap.com/static/img/coins/128x128/\""
+            buildConfigField "String", "API_KEY", "\"b01a0548-2269-4fb6-8bc8-a633b54ef527\""
         }
         debug{
             minifyEnabled false
             shrinkResources false
+            buildConfigField "String", "BASE_URL", "\"https://pro-api.coinmarketcap.com/\""
+            buildConfigField "String", "BASE_IMAGE_URL", "\"https://s2.coinmarketcap.com/static/img/coins/128x128/\""
+            buildConfigField "String", "API_KEY", "\"b01a0548-2269-4fb6-8bc8-a633b54ef527\""
         }
     }
     compileOptions {
@@ -99,4 +105,5 @@ dependencies {
     // Timber
     implementation  "com.jakewharton.timber:timber:4.7.1"
 
+    implementation "com.patrykandpatrick.vico:compose:1.6.5"
 }
