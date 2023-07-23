@@ -1,4 +1,4 @@
-package com.fahreddinsevindir.cryptoapp
+package com.fahreddinsevindir.cryptoapp.presentation.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
